@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ad0aa1b0b3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Anmol</span><br>Verma From India</h1>
+                <br>
+                <span id="animation"></span>
+            </div>
+        </div>
+    </div>
+    <!-- -------------About------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/userA.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>With a Bachelor's degree in Computer Science and Engineering and certifications from Newton School, 
+                        I enter the realm of Full stack web Development as a dynamic and skilled fresher. 
+                        Through successful completion of multiple projects spanning diverse industries, 
+                        I've honed my proficiency in Frontend (HTML, CSS, JS, React) and Backend (Node.js, Express.js). 
+                        My practical experience adds depth to my expertise, positioning me as a valuable asset in web development.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end</span><br>HTML, CSS, Javascript, ReactJs</li> 
+                            <li><span>Back-end</span><br>Node.js, Express.js</li>
+                            <li><span>Database</span><br>MySQL, MongoDB</li>
+                            <li><span>Language</span><br>JAVA, C, C++</li>
+                            <li><span>Tools</span><br>VS Code, Git, GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Nov 2022 - Present</span><br>Full Stack Web Developer <br> Newton School </li> 
+                            <li><span>Oct 2022 - Nov 2023</span><br>Web Developer <br> Nable Invent Solution</li>
+                            <li><span>July 2021 - June 2022</span><br>Data Entry Operator <br> Freelancer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Nov 2021 - Presnet </span><br>Full Stack Web Developer at Newton School <br> Certificated Course </li> 
+                            <li><div><span>June 2019 - June 2023</span><br>B.Tech (Computer Science Engineering) at CSVTU Bhilai <br> Aggregate : 81.11%</div></li>
+                            <li><div><span>June 2016 - June 2017</span><br>Senior Secondary at Govt.H.S School Lawan <br> Aggregate : 70.5%</div></li>
+                            <li><div><span>June 2018 - June 2019</span><br>Higher Secondary at Govt.H.S School Lawan <br> Aggregate : 76.5%</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------Services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>I'm a Web Developer proficient in HTML, CSS, JavaScript, ReactJs, and Node.js. 
+                        Specializing in responsive website development, I create engaging and efficient web solutions. 
+                        Let's bring your digital vision to life together!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>                    
+                    <h2>Software Engineer</h2>
+                    <p>I'm a Java-focused Software Engineer with a strong computer science background. 
+                        I specialize in crafting robust software solutions and thrive in collaborative settings. 
+                        Let's create impactful software together!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen"></i>
+                    <h2>Java Developer</h2>
+                    <p>As a Java Developer, I am skilled in creating software applications using Java. 
+                        I can design, develop, and maintain diverse software solutions across industries, 
+                        collaborating with teams to ensure high-quality outcomes.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------Portfolio------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" >
+                    <div class="layer">
+                        <h3>YouTube_Clone</h3>
+                        <p>Your personalized video platform with HTML, CSS, JavaScript, and React.js. Enjoy personalized 
+                            recommendations, seamless engagement, and robust admin controls, revolutionizing video streaming.
+                        </p>
+                        <a href="https://you-tube-clone-murex.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg" >
+                    <div class="layer">
+                        <h3>ISRO Clone</h3>
+                        <p>A tribute to India's space agency crafted with HTML, CSS, and JavaScript. Explore ISRO's achievements, missions, and 
+                            technologies through this interactive platform, offering a glimpse into India's journey in space exploration. </p>
+                        <a href="https://anmol26verma.github.io/ISRO-centres---Javascript-Project---wc2yf3pvb8x3/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg" >
+                    <div class="layer">
+                        <h3>Simon Say Game </h3>
+                        <p>A classic game using Html, CSS, Javascript. The game is where you have to repeat the pattern of colors displayed on the screen.
+                            The more you repeat, the more points you get.
+                            Play the game and see how many points you can get.
+                        </p>
+                        <a href="https://anmol26verma.github.io/Simon-Say-Game/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Anmol26verma" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------Contact-------------  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>vermaanmol807@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 7879416498</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100038786258078"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/i___am____anmol/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anmol-verma-b25b91267/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/anmolverma807"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/vermaanmol2001"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/ANMOL VERMA.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024. All rights reserved.Made with <i class="fa-solid fa-heart"></i> by Anmol Verma</p>
+        </div>
+    </div>
+    <!-- Add JS -->
+    <script src="app.js"></script>
+</body>
+</html>
