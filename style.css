@@ -299,6 +299,7 @@ form input, form textarea{
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
+    resize: none;
 }
 form .btn2{
     padding: 14px 60px;
