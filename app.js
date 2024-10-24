@@ -75,3 +75,54 @@ function closemenu(){
   playTypingAnimation(typingTexts[0]);
 
   
+  window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
+
+
+// Function to add or remove the 'active' class based on section in view
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link');
+
+const observerOptions = {
+    threshold: 0.5 // 50% of the section should be visible to be considered 'in view'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Remove 'active' from all nav links
+            navLinks.forEach(link => link.classList.remove('active'));
+            // Add 'active' to the current section's nav link
+            const activeLink = document.querySelector(`a[href="#${entry.target.id}"]`);
+            activeLink.classList.add('active');
+        }
+    });
+}, observerOptions);
+
+// Observe each section
+sections.forEach(section => {
+    observer.observe(section);
+});
+
+// Scroll event listener for background color change
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
+
+document.getElementById('logo').addEventListener('click', function() {
+  window.scrollTo({
+      top: 0,    // Scroll to the top of the page
+      behavior: 'smooth'   // Smooth scrolling
+  });
+});
