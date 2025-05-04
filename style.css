@@ -365,7 +365,15 @@ form .btn2 {
 nav .fa-solid {
   display: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) { 
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;  
+    padding: 5px;
+    
+  }
   #header {
     background-image: url(images/Bg-phone.png);
   }
@@ -378,7 +386,8 @@ nav .fa-solid {
   }
   nav .fa-solid {
     display: block;
-    font-size: 25px;
+    font-size: 25px; 
+    margin-right: 20px;
   }
   nav ul {
     background: #ff004f;
